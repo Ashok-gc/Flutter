@@ -1,0 +1,27 @@
+    // home: Scaffold(
+    //   appBar: AppBar(
+    //     title: const Text('Hello World'),
+    //     centerTitle: true,
+    //     elevation: 0,
+    //     backgroundColor: Color.fromARGB(234, 226, 14, 14),
+    //   ),
+    //   // body:Padding(
+    //   //   padding: const EdgeInsets.all(9),
+    //   //   child:  Container(alignment: ,)
+    //   // );
+    //   body: const TextField(
+    //     decoration: InputDecoration(
+    //         border: OutlineInputBorder(
+    //             borderRadius: BorderRadius.all(Radius.circular(20.0))),
+    //         enabledBorder: OutlineInputBorder(
+    //           borderSide: BorderSide(
+    //             color: Colors.red,
+    //           ),
+    //         ),
+    //         focusedBorder: OutlineInputBorder(
+    //             borderSide:
+    //                 BorderSide(color: Color.fromARGB(255, 41, 222, 47))),
+    //         labelText: 'Enter Name'),
+    //   ),
+    //   backgroundColor: Color.fromARGB(230, 255, 255, 255),
+    // ),

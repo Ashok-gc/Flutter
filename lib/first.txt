@@ -1,0 +1,39 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: MyScreen(),
+    ),
+  );
+}
+
+class MyScreen extends StatelessWidget {
+  const MyScreen({super.key});
+
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('My App'),
+        centerTitle: true,
+        elevation: 0,
+        backgroundColor: Color.fromARGB(255, 111, 181, 216),
+      ),
+      body: const TextField(
+        decoration: InputDecoration(
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.all(Radius.circular(30.0)),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: Colors.red),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: Color.fromARGB(255, 124, 54, 244)),
+          ),
+          labelText: 'Enter Name',
+        ),
+      ),
+    );
+  }
+}
