@@ -50,9 +50,6 @@ void main() {
         '/displayStudent':(context) => const DisplayStudentScreen(),
         '/cardScreen':(context) => const CardScreen(),
 
-        // '/displayStudent':(context) => const DisplayStudentDetailsScreen(),
-
-
       },
     )
   );
