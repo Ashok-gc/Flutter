@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:motion_toast/motion_toast.dart';
 
 class CardScreen extends StatefulWidget {
   const CardScreen({super.key});
@@ -8,26 +9,37 @@ class CardScreen extends StatefulWidget {
 }
 
 class _CardScreenState extends State<CardScreen> {
+  Widget displayCard(String title) {
+    return GestureDetector(
+      onTap: () {
+        MotionToast.success(description: const Text("Example of Sucess"),
+        animationDuration: const Duration(seconds: 3),
+        ).show(context);
+      },
+      child: SizedBox(
+        height: 200,
+        width: double.infinity,
+        child: Card(
+          color: Colors.yellow,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: SizedBox(
-          height: 200,
-          width: double.infinity,
-          child: Card(
-            elevation: 5,
-            color: Colors.amber,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(20),
-            ),
-            child: const Center(
-              child: Text("I'm inside a card",
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-              ),)
-            ),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              for (int i = 1; i < 10; i++) ...{
+                displayCard("I am inside a card $i")
+              },
+            ],
           ),
         ),
       ),

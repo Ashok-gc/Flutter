@@ -23,15 +23,17 @@ import 'package:my_firstapp/flexible.dart';
 import 'package:my_firstapp/imagescreen.dart';
 import 'package:my_firstapp/radiobutton.dart';
 import 'package:my_firstapp/rowcolumn.dart';
+import 'package:my_firstapp/screens/calculator.dart';
 import 'package:my_firstapp/screens/cardscreen.dart';
 import 'package:my_firstapp/screens/displayStudent.dart';
+import 'package:my_firstapp/screens/grid.dart';
 import 'package:my_firstapp/screens/student_screen.dart';
 
 void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/studentScreen',
+      initialRoute: '/calculatorScreen',
       routes: {
         '/':(context) => const StudentDetailsScreen(),
         '/snackBar':(context) => const SnackBarScreen(),
@@ -49,6 +51,8 @@ void main() {
         '/studentScreen':(context) => const StudentDetailsScreen(),
         '/displayStudent':(context) => const DisplayStudentScreen(),
         '/cardScreen':(context) => const CardScreen(),
+        '/gridScreen':(context) => const GridScreen(),
+        '/calculatorScreen':(context) => const CalculatorScreen(),
 
       },
     )
