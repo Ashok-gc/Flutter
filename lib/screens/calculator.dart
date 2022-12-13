@@ -43,7 +43,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
         backgroundColor: const Color.fromARGB(255, 7, 89, 117),
         title: const Text("Calculator"),
       ),
-      backgroundColor: const Color.fromARGB(255, 25, 161, 206),
+      backgroundColor: const Color.fromARGB(228, 11, 165, 216),
       body: Column(
         children: <Widget>[
           Expanded(
@@ -128,7 +128,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                           });
                         },
                         buttonText: buttons[index],
-                        color: const Color.fromARGB(255, 26, 133, 220),
+                        color: const Color.fromARGB(255, 13, 66, 109),
                         textColor: Colors.black,
                       );
                     }
@@ -141,7 +141,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                           });
                         },
                         buttonText: buttons[index],
-                        color: const Color.fromARGB(255, 171, 76, 3),
+                        color: const Color.fromARGB(255, 164, 75, 6),
                         textColor: Colors.white,
                       );
                     }
