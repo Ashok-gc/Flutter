@@ -60,10 +60,12 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                       style: const TextStyle(
                           fontSize: 28, color: Color.fromARGB(255, 0, 0, 0)),
                     ),
+                    
                   ),
                   Container(
                     padding: const EdgeInsets.all(18),
-                    // color: const Color.fromARGB(255, 7, 89, 117),
+                    color: const Color.fromARGB(255, 7, 89, 117),
+                    
                     alignment: Alignment.centerRight,
                     child: Text(
                       answer,
