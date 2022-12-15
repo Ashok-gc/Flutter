@@ -16,7 +16,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
   // Array of button
   final List<String> buttons = [
     'C',
-    '*',
+    'x',
     '/',
     'DEL',
     '1',
@@ -132,18 +132,18 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                       );
                     }
                     // = Button
-                    else if (index == 1) {
-                      return MyButton(
-                        buttontapped: () {
-                          setState(() {
-                            equalPressed();
-                          });
-                        },
-                        buttonText: buttons[index],
-                        color: const Color.fromARGB(255, 3, 71, 86),
-                        textColor: Colors.white,
-                      );
-                    }
+                    // else if (index == 1) {
+                    //   return MyButton(
+                    //     buttontapped: () {
+                    //       setState(() {
+                    //         equalPressed();
+                    //       });
+                    //     },
+                    //     buttonText: buttons[index],
+                    //     color: const Color.fromARGB(255, 3, 71, 86),
+                    //     textColor: Colors.white,
+                    //   );
+                    // }
                     // = Button
                     else if (index == 19) {
                       return MyButton(
