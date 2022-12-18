@@ -37,7 +37,7 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/imageScreen',
+      initialRoute: '/bottomNavigation',
       routes: {
         '/':(context) => const StudentDetailsScreen(),
         '/snackBar':(context) => const SnackBarScreen(),
