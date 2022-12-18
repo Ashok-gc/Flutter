@@ -35,7 +35,7 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/datatableScreen',
+      initialRoute: '/stackScreen',
       routes: {
         '/':(context) => const StudentDetailsScreen(),
         '/snackBar':(context) => const SnackBarScreen(),
