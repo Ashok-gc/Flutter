@@ -28,6 +28,7 @@ import 'package:my_firstapp/screens/cardscreen.dart';
 import 'package:my_firstapp/screens/datatableScreen.dart';
 import 'package:my_firstapp/screens/displayStudent.dart';
 import 'package:my_firstapp/screens/grid.dart';
+import 'package:my_firstapp/screens/stack.dart';
  import 'package:my_firstapp/screens/student_screen.dart';
 
 void main() {
@@ -55,6 +56,8 @@ void main() {
         '/gridScreen':(context) => const GridScreen(),
         '/calculatorScreen':(context) => const CalculatorScreen(),
         '/datatableScreen':(context) => const DataTableScreen(),
+        '/stackScreen':(context) => const StackScreen()
+
       },
     )
   );
