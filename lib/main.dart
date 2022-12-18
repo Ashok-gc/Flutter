@@ -23,19 +23,21 @@ import 'package:my_firstapp/flexible.dart';
 import 'package:my_firstapp/imagescreen.dart';
 import 'package:my_firstapp/radiobutton.dart';
 import 'package:my_firstapp/rowcolumn.dart';
+import 'package:my_firstapp/screens/bottomNavigation.dart';
 import 'package:my_firstapp/screens/calculator.dart';
 import 'package:my_firstapp/screens/cardscreen.dart';
 import 'package:my_firstapp/screens/datatableScreen.dart';
 import 'package:my_firstapp/screens/displayStudent.dart';
 import 'package:my_firstapp/screens/grid.dart';
+import 'package:my_firstapp/screens/picture.dart';
 import 'package:my_firstapp/screens/stack.dart';
- import 'package:my_firstapp/screens/student_screen.dart';
+import 'package:my_firstapp/screens/student_screen.dart';
 
 void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/stackScreen',
+      initialRoute: '/imageScreen',
       routes: {
         '/':(context) => const StudentDetailsScreen(),
         '/snackBar':(context) => const SnackBarScreen(),
@@ -56,7 +58,10 @@ void main() {
         '/gridScreen':(context) => const GridScreen(),
         '/calculatorScreen':(context) => const CalculatorScreen(),
         '/datatableScreen':(context) => const DataTableScreen(),
-        '/stackScreen':(context) => const StackScreen()
+        '/stackScreen':(context) => const StackScreen(),
+        '/imageScreen':(context) => const ImageContainerScreen(),
+        '/bottomNavigation':(context) => const ButtonNavigationBarScreen(),      
+        
 
       },
     )
