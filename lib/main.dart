@@ -31,6 +31,7 @@ import 'package:my_firstapp/screens/displayStudent.dart';
 import 'package:my_firstapp/screens/grid.dart';
 import 'package:my_firstapp/screens/loginpage.dart';
 import 'package:my_firstapp/screens/picture.dart';
+import 'package:my_firstapp/screens/splash.dart';
 import 'package:my_firstapp/screens/stack.dart';
 import 'package:my_firstapp/screens/student_screen.dart';
 
@@ -38,7 +39,7 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/login',
+      initialRoute: '/splash',
       routes: {
         '/':(context) => const StudentDetailsScreen(),
         '/snackBar':(context) => const SnackBarScreen(),
@@ -62,7 +63,8 @@ void main() {
         '/stackScreen':(context) => const StackScreen(),
         '/imageScreen':(context) => const ImageContainerScreen(),
         '/bottomNavigation':(context) => const ButtonNavigationBarScreen(),      
-        '/login':(context) => const LoginScreen(),      
+        '/login':(context) => const LoginScreen(), 
+        '/splash':(context) => const SplashScreen(),              
         
 
       },
